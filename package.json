@@ -1,0 +1,20 @@
+{
+  "name": "token-distribution",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "trustlines": "node ./controllers/fetchTrustlines.js",
+    "average": "node ./controllers/calculateAverage.js",
+    "airdrop": "node ./controllers/sendToken.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dot-env": "0.0.1",
+    "dotenv": "^16.0.0",
+    "fs": "0.0.1-security",
+    "path": "^0.12.7",
+    "xrpl": "^2.1.1"
+  }
+}
