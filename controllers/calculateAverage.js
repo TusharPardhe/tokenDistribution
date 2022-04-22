@@ -22,7 +22,7 @@ const calcAvg = () => {
     const excluded_accounts = JSON.parse(fs.readFileSync(excludedAccountsJSONPath));
 
     const previousAirdropsSum = previousAirdrops.reduce((previousValue, currentValue) => previousValue + currentValue, 0.0);
-    const averageMultiplier = (100 - (5 * previousAirdrops.length)) / 100;
+    const averageMultiplier = 1;
     const firstPartOfEquation = averageMultiplier * previousAirdropsSum;
     let average = 0.0;
 
