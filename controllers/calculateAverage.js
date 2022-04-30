@@ -8,7 +8,7 @@ const checkKycStatus = require("./checkKycStatus");
 
 require('dotenv').config({ path: path.resolve(__dirname, "../.env") });
 
-const previousAirdrops = [1223.8, 1327];
+const previousAirdrops = [1223.8, 1327, 1690.617, 1677.852];
 
 const calcAvg = () => {
     console.log("Calculating...\n\n");
@@ -22,7 +22,7 @@ const calcAvg = () => {
     const excluded_accounts = JSON.parse(fs.readFileSync(excludedAccountsJSONPath));
 
     const previousAirdropsSum = previousAirdrops.reduce((previousValue, currentValue) => previousValue + currentValue, 0.0);
-    const averageMultiplier = 1;
+    const averageMultiplier = parseFloat(process.env.MULTIPLIER);
     const firstPartOfEquation = averageMultiplier * previousAirdropsSum;
     let average = 0.0;
 
