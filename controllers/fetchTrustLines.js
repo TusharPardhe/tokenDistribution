@@ -1,7 +1,8 @@
 const xrpl = require("xrpl");
 const fs = require("fs");
 const path = require("path");
-const accountJSONPath = path.resolve(__dirname, "../accounts.json");
+
+const accountJSONPath = path.resolve(__dirname, "../json/accounts.json");
 require('dotenv').config({ path: path.resolve(__dirname, '../.env') });
 
 const fetchTrustLines = () => {

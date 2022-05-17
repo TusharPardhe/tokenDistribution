@@ -6,7 +6,7 @@
   "scripts": {
     "trustlines": "node ./controllers/fetchTrustlines.js",
     "average": "node ./controllers/calculateAverage.js",
-    "airdrop": "node ./controllers/sendToken.js"
+    "airdrop": "concurrently \"node ./distributors/distributorOne.js\" \"node ./distributors/distributorTwo.js\" \"node ./distributors/distributorThree.js\""
   },
   "author": "",
   "license": "ISC",
@@ -16,5 +16,8 @@
     "fs": "0.0.1-security",
     "path": "^0.12.7",
     "xrpl": "^2.1.1"
+  },
+  "devDependencies": {
+    "concurrently": "^7.2.0"
   }
 }
