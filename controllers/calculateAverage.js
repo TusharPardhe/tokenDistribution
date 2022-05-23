@@ -8,7 +8,7 @@ const checkKycStatus = require("./checkKycStatus");
 
 require('dotenv').config({ path: path.resolve(__dirname, "../.env") });
 
-const previousAirdrops = [1223.8, 1327, 1690.617, 1677.852];
+const previousAirdrops = [1223.8, 1327, 1690.617, 1677.852, 2781.641, 2702.703, 3055.768];
 
 const calcAvg = () => {
     console.log("Calculating...\n\n");
