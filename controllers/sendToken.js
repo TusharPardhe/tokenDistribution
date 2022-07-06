@@ -62,7 +62,7 @@ const payloadForTokens = (wallet, destinationAddress) => {
         "Memos": [
             {
                 "Memo": {
-                    "MemoData": xrpl.convertStringToHex("I adore memes! Do you have any? By the way you will receive something special in near future."),
+                    "MemoData": xrpl.convertStringToHex("Tushar's Airdrop Script"),
                 }
             }
         ],
